@@ -1163,6 +1163,12 @@
             "type": "boolean",
             "default": true,
             "markdownDescription": "%config.branchPick.showRenameBranch.description%"
+          },
+          "git-worktree-manager.branchPick.newBranchBase": {
+            "order": 2,
+            "type": "string",
+            "default": "",
+            "markdownDescription": "%config.branchPick.newBranchBase.description%"
           }
         }
       }

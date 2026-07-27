@@ -99,6 +99,7 @@
     "submenus.worktree-action": "Worktree Action",
     "config.checkoutIgnoreOtherWorktree.description": "When enabled, the state of other worktrees is ignored when switching branches, allowing multiple worktrees to use the same branch.",
     "config.branchPick.showRenameBranch.description": "Show the \"Rename Branch\" button on the results of \"Pick Branch\"",
+    "config.branchPick.newBranchBase.description": "Fixed base branch to use when creating a new branch via \"Create new branch...\". If left empty, the current branch is used as the base.",
     "config.treeView.toSCM.description": "Display views in the Source Control container",
     "config.worktreePathTemplate.description": "Template for the worktree path. Available variables:\n\n- `$BASE_PATH` (repo root)\n- `$BASE_ROOT` (parent directory of repo root).",
     "config.worktreeSubdirectoryTemplate.description": "Template for worktree subdirectory names. Available variables:\n\n- `$BASE_NAME` (repo folder name)\n- `$INDEX` (incrementing number).\n- `$REF_NAME` (reference name, such as branch name, tag name)\n\nCannot contain characters: / \\ : * ? \" < > |",

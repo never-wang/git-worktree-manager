@@ -16,7 +16,9 @@ import type { RefItem, RefList, RepoRefList, IPickBranch, IPickBranchResolveValu
 import { getLastCommitHash } from '@/core/git/getLastCommitHash';
 import { withResolvers } from '@/core/util/promise';
 import { createBranchFrom } from '@/core/git/createBranch';
+import { getCurrentBranch } from '@/core/git/getCurrentBranch';
 import { inputNewBranch } from '@/core/ui/inputNewBranch';
+import { Config } from '@/core/config/setting';
 import { comparePath } from '@/core/util/folder';
 import logger from '@/core/log/logger';
 
@@ -68,6 +70,9 @@ async function createBranchStrategy({
             cwd: cwd,
             showCreate: false,
         });
+    } else {
+        const fixedBase = Config.get('branchPick.newBranchBase', '');
+        branchItem = { branch: fixedBase || (await getCurrentBranch(cwd)) };
     }
     if (branchItem === false) {
         quickPick.dispose();

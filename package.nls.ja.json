@@ -99,6 +99,7 @@
     "submenus.worktree-action": "ワークツリー操作",
     "config.checkoutIgnoreOtherWorktree.description": "有効にすると、ブランチの切り替え時に他のワークツリーの状態を無視し、複数のワークツリーで同じブランチを使用できるようになります",
     "config.branchPick.showRenameBranch.description": "「ブランチを選択」の結果に「ブランチのリネーム」ボタンを表示",
+    "config.branchPick.newBranchBase.description": "「新しいブランチを作成...」で新しいブランチを作成する際に固定で使用するベースブランチ。空の場合は現在のブランチをベースに作成します",
     "config.treeView.toSCM.description": "ソース管理コンテナにビューを表示",
     "config.worktreePathTemplate.description": "ワークツリーパスのテンプレートです。使用可能な変数：\n\n- `$BASE_PATH`（リポジトリのルート）\n- `$BASE_ROOT`（リポジトリのルートの親ディレクトリ）",
     "config.worktreeSubdirectoryTemplate.description": "ワークツリーサブディレクトリ名のテンプレートです。使用可能な変数：\n\n- `$BASE_NAME`（リポジトリフォルダ名）\n- `$INDEX`（増分番号）。\n- `$REF_NAME` （参照名、ブランチ名やタグ名など）\n\n使用できない文字：/ \\ : * ? \" < > |",

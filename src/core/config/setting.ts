@@ -43,6 +43,7 @@ export class Config {
 
     // Branch picker configuration
     static get(key: 'branchPick.showDeleteBranch', defaultValue: true): boolean;
+    static get(key: 'branchPick.newBranchBase', defaultValue: ''): string;
 
     // Terminal configuration
     static get(key: 'terminalCmdList', defaultValue: []): string[];
