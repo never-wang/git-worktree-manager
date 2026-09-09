@@ -10,6 +10,7 @@ rspack.config.js
 rstest.config.js
 vsc-extension-quickstart.md
 pnpm-lock.yaml
+.pnpm-store/**
 .pnpm*
 **/tsconfig.json
 **/.eslintrc.json
